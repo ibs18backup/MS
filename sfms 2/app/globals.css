@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure html and body fill viewport and can scroll */
+html, body, #root, #__next {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Optional: If your app uses a specific root div, add it here */
+
+/* Also, make sure main content wrapper can grow */
+main, #main {
+  min-height: 100vh;
+}
